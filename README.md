@@ -41,10 +41,10 @@ function TellDay(date) {
     }
 }
 ```
-Use by doing functions like:
+Examples
 ```javascript
-alert(TellDay("MM/DD/YYYY"));
-
+alert(TellDay("05/16/2022"));
+alert(TellDay("1/1/2024"));
 ```
 ```javascript
 
