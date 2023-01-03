@@ -32,9 +32,9 @@ function TellDay(date) {
     const diffInMs = new Date(date1) - new Date(date);
     switch(diffInMs > 0) {
     	case true:
-			return(["Days since "+date +": "+Math.floor(diffInMs/86400000)]);
+		return(["Days since "+date +": "+Math.floor(diffInMs/86400000)]);
       	case false:
-			return(["Days until "+date+": "+Math.abs(Math.floor(diffInMs/86400000))]);
+		return(["Days until "+date+": "+Math.abs(Math.floor(diffInMs/86400000))]);
     }
 }
 
