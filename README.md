@@ -40,3 +40,14 @@ function TellDay(date) {
 
 alert(TellDay("1/1/2021"));
 ```
+Shortened if code
+```javascript
+function TellDay(date) {
+    const diffInMs=new Date(new Date().toLocaleDateString())-new Date(date);
+    const convert=diffInMs/86400000
+    if (diffInMs>0) return (["Days since "+date+": "+Math.floor(convert)]);
+    else return (["Days until "+date+": "+Math.abs(Math.floor(convert))]);
+}
+
+alert(TellDay("1/1/2023"));
+```
