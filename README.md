@@ -51,3 +51,30 @@ function TellDay(date) {
 
 alert(TellDay("1/1/2023"));
 ```
+Birthday day countdown with name variable 
+```js
+const BirthdayDay = 10;
+const BirthdayMonth = 3;
+
+
+const Name = "Name";
+
+
+const YearDate = new Date();
+const BirthdayDate = (`${BirthdayMonth}/${BirthdayDay}/${YearDate.getFullYear()}`);
+const DateInMs = new Date(new Date().toLocaleDateString())
+
+
+function TellDay(date) {
+    const diffInMs=new Date(new Date().toLocaleDateString())-new Date(date);
+    var convert = Math.floor(diffInMs/86400000)
+    if (diffInMs>0) return (['Days since '+Name+'\'s birthday: '+Math.floor(convert)]); // You won't get this since the year changes with your time
+    if (diffInMs == 0) {
+        return ('it is the special day!');
+    }
+    else return (['Days until '+Name+'\'s birthday: '+Math.abs(Math.floor(convert))]);
+
+}
+
+console.log(TellDay(BirthdayDate));
+```
