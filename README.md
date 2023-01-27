@@ -53,8 +53,8 @@ alert(TellDay("1/1/2023"));
 ```
 Birthday day countdown with name variable 
 ```js
-const BirthdayDay = 10;
-const BirthdayMonth = 3;
+const BirthdayDay = 26;
+const BirthdayMonth = 1;
 
 
 const Name = "Name";
@@ -70,7 +70,7 @@ function TellDay(date) {
     var convert = Math.floor(diffInMs/86400000)
     if (diffInMs>0) return (['Days since '+Name+'\'s birthday: '+Math.floor(convert)]);
     if (diffInMs == 0) {
-        return ('it is the special day!');
+        return ('It is '+Name+'\'s special day!');
     }
     else return (['Days until '+Name+'\'s birthday: '+Math.abs(Math.floor(convert))]);
 
