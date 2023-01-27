@@ -68,7 +68,7 @@ const DateInMs = new Date(new Date().toLocaleDateString())
 function TellDay(date) {
     const diffInMs=new Date(new Date().toLocaleDateString())-new Date(date);
     var convert = Math.floor(diffInMs/86400000)
-    if (diffInMs>0) return (['Days since '+Name+'\'s birthday: '+Math.floor(convert)]); // You won't get this since the year changes with your time
+    if (diffInMs>0) return (['Days since '+Name+'\'s birthday: '+Math.floor(convert)]);
     if (diffInMs == 0) {
         return ('it is the special day!');
     }
