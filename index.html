@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-  
+<p id="Test">Test</p>
 <p id="Day"></p>
 
 </body>
@@ -9,10 +9,11 @@
 
 
 <script>
-document.getElementById('Day').innerHTML = TellDay("05/16/2022")"
 function TellDay(date) {
     var date1 = new Date().toLocaleDateString();
     const diffInMs = new Date(date1) - new Date(date);
     return(Math.floor(diffInMs/(86400000)));
 }
+document.getElementById('Day').innerHTML = TellDay("05/16/2022")"
+
 </script>
