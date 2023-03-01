@@ -14,6 +14,7 @@ function TellDay(date) {
     const diffInMs = new Date(date1) - new Date(date);
     return(Math.floor(diffInMs/(86400000)));
 }
-document.getElementById('Day').innerHTML = TellDay("05/16/2022")"
+document.getElementById('Day').innerHTML = "(TellDay("05/16/2022"))";
+alert(TellDay("05/16/2022"));
 
 </script>
