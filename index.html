@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+<p id="Day"></p>
+
+</body>
+</html> 
+
+
+<script>
+document.getElementById('Day').innerHTML = TellDay("05/16/2022")"
+function TellDay(date) {
+    var date1 = new Date().toLocaleDateString();
+    const diffInMs = new Date(date1) - new Date(date);
+    return(Math.floor(diffInMs/(86400000)));
+}
+</script>
