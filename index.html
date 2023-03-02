@@ -2,18 +2,27 @@
 <html>
 <body>
 
-<p id="Test">Test</p>
-<p id="demo"></p>
+    <p id="Test">Test</p>
+    <p id="demo"></p>
+    <input id-"userInput">
+    <button onclick="Submit()" > Submit </button>
+    <h1 id="message">  </h1>
 
 </body>
 </html> 
 
-
 <script>
+let userInput = document.querySelector(#userInput);
 function TellDay(date) {
     var date1 = new Date().toLocaleDateString();
     const diffInMs = new Date(date1) - new Date(date);
     return(Math.floor(diffInMs/(86400000)));
+}
+    
+function Submit() {
+    let userInput = document.querySelector(#userInput);
+    let message = document.querySlector("#message");
+    message.innerHTML = "test" + userinput;
 }
 
 document.getElementById('demo').innerHTML = TellDay("05/16/2022");
