@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
+
 <p id="Test">Test</p>
-<p id="Day"></p>
+<p id="demo"></p>
 
 </body>
 </html> 
@@ -14,7 +15,7 @@ function TellDay(date) {
     const diffInMs = new Date(date1) - new Date(date);
     return(Math.floor(diffInMs/(86400000)));
 }
-document.getElementById('Day').innerHTML = "(TellDay("05/16/2022"))";
-alert(TellDay("05/16/2022"));
+
+document.getElementById('demo').innerHTML = TellDay("05/16/2022");
 
 </script>
